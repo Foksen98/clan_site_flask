@@ -1,0 +1,21 @@
+{% extends "main/base.html" %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/index.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="overlay">
+	<div class="description text-center">
+		<h2>Добро пожаловать на сайт клана LT88</h2>
+		<p>
+			Для игроков клана рекомендуется авторизоваться через OPENID.
+		</p>
+		<a class="btn-lg btn-secondary" href="{{ url_for('main.login') }}" style="text-align: center; margin-top: 20rem">Войти</a>
+	</div>
+</div>
+
+{% endblock %}

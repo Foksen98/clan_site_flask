@@ -1,0 +1,26 @@
+{% extends "main/base.html" %}
+
+{% block title %} Ошибка {% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/error.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="overlay">
+  	<div class="description text-center">
+  		<h2>
+        Код ошибки
+        {% block error_code %}{% endblock %}
+      </h2>
+  		<p>
+  			{% block error_message %}{% endblock %}
+  		</p>
+  		<a class="btn-lg btn-secondary" href="{{ url_for('main.index') }}" style="text-align: center; margin-top: 20rem">На главную</a>
+  	</div>
+  </div>
+
+{% endblock %}

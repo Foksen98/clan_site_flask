@@ -1,0 +1,38 @@
+body {
+	background-image: url('../images/error_background.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.description {
+	position: absolute;
+	margin-top: 20rem;
+	margin-left: 30rem;
+	margin-right: 30rem;
+}
+
+.description h2 {
+	color: #F97300;
+}
+
+.description p {
+	color:#666;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.description a {
+	border:1px  solid #F97300;
+	background:#F97300;
+	color:#fff;
+}
