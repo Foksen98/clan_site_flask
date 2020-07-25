@@ -1,21 +1,62 @@
 {% extends "main/base.html" %}
 
-{% block extra_css %}
-
-<link rel="stylesheet" href="{{ url_for('static', filename = 'css/index.css') }}">
-
-{% endblock %}
+{% block title %} Главная {% endblock %}
 
 {% block content %}
 
-<div class="overlay">
-	<div class="description text-center">
-		<h2>Добро пожаловать на сайт клана LT88</h2>
-		<p>
-			Для игроков клана рекомендуется авторизоваться через OPENID.
-		</p>
-		<a class="btn-lg btn-secondary" href="{{ url_for('main.login') }}" style="text-align: center; margin-top: 20rem">Войти</a>
-	</div>
+<div class="jumbotron" style="background: rgba(255, 255, 255, 0.7);">
+	<h1 class="display-4">Привет, мир!</h1>
+	<p class="lead">Это простой пример блока с компонентом в стиле jumbotron для привлечения дополнительного внимания к содержанию или информации.</p>
+	<hr class="my-4">
+	<p>Использются служебные классы для типографики и расстояния содержимого в контейнере большего размера.</p>
+	<p class="lead">
+		<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+	</p>
 </div>
+
+<main role="main">
+	<div class="album py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 align-self-center">
+					<div class="card mb-4 shadow-sm" style="width: 320px;">
+						<img src="https://ru-wotp.wgcdn.co/dcont/fb/image/1920h900-1-10-pol.jpg" height="150" class="card-img-top" alt="...">
+						<div class="card-body bg-secondary text-white">
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<button type="button" class="btn btn-sm btn-outline-warning"> View </button>
+								<small class="text-white"> 23.07.2020 22:01 </small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4 shadow-sm" style="width: 320px;">
+						<img src="https://ru-wotp.wgcdn.co/dcont/fb/image/1920h900-1-10-pol.jpg" height="150" class="card-img-top" alt="...">
+						<div class="card-body bg-secondary text-white">
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<button type="button" class="btn btn-sm btn-outline-warning"> View </button>
+								<small class="text-white"> 23.07.2020 22:01 </small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4 shadow-sm" style="width: 320px;">
+						<img src="https://ru-wotp.wgcdn.co/dcont/fb/image/1920h900-1-10-pol.jpg" height="150" class="card-img-top" alt="...">
+						<div class="card-body bg-secondary text-white">
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<button type="button" class="btn btn-sm btn-outline-warning"> View </button>
+								<small class="text-white"> 23.07.2020 22:01 </small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
 
 {% endblock %}
